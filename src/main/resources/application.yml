@@ -1,8 +1,5 @@
-server:
-  port: 8083
-
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017
-      database: RatingMicroservices
+  application:
+    name: RATING-SERVICE
+  config:
+    import: configserver:http://localhost:8080
